@@ -1,7 +1,6 @@
 <html>
 <head>
-  <title>MacroProgrammers</title>
-  <meta name="author" content="Jacob Hefley, Chancie Van, Tony Hoyev, Murtaza Akbari, Yasir Farah">
+  <title>MacroProgrammers - Sticky Note App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -83,10 +82,46 @@
     }
 
     .section p { font-size: 17px; margin-bottom: 2px; }
-    .section .hint { color: #777; margin-top: 6px; }
 
     .section ul { padding-left: 24px; }
-    .section li { font-size: 17px; margin-bottom: 2px; }
+    .section li { font-size: 17px; margin-bottom: 4px; }
+    .section li strong { font-weight: bold; }
+
+    .download-section {
+      border-top: 1px solid #ccc;
+      padding-top: 24px;
+    }
+
+    .download-section h2 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2d2d2d;
+      background: none;
+      border: 2px solid #2d2d2d;
+      padding: 12px 28px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .download-btn:hover {
+      background: #2d2d2d;
+      color: #FAF8EF;
+    }
+
+    .download-note {
+      color: #777;
+      font-size: 15px;
+      margin-top: 10px;
+    }
 
     footer {
       text-align: center;
@@ -119,28 +154,36 @@
   <div class="container">
 
     <div class="hero">
-      <h1>we are macroprogrammers.</h1>
-      <p>a group of students at MSU Denver,</p>
-      <p>currently taking CS3250, Development Tools and Methods.</p>
+      <h1>sticky note app.</h1>
+      <p>a simple, no-login notes app built for students.</p>
+      <p>organize your key ideas, priorities, and thoughts without the clutter.</p>
+      <p>built in Java.</p>
     </div>
 
     <div class="section">
-      <h2>what we're building</h2>
-      <p>we're working on a <a href="app.html">sticky note app</a> for students.</p>
-      <p>a simple Java-based tool to capture and organize your thoughts.</p>
-      <p class="hint"><a href="app.html">learn more and download</a></p>
-    </div>
-
-    <div class="section">
-      <h2>the team</h2>
+      <h2>features</h2>
       <ul>
-        <li>Jacob Hefley</li>
-        <li>Chancie Van</li>
-        <li>Tony Hoyev</li>
-        <li>Murtaza Akbari</li>
-        <li>Yasir Farah</li>
+        <li><strong>quick capture</strong> - open and write, no sign-up needed</li>
+        <li><strong>easy organization</strong> - sort and group your notes however you want</li>
+        <li><strong>customizable</strong> - pick your fonts, colors, and layout</li>
+        <li><strong>search and link</strong> - find any note and connect related ideas together</li>
+        <li><strong>lightweight</strong> - runs locally on your machine, no internet required</li>
       </ul>
-      <p style="margin-top: 6px;"><a href="secondpage.html">read more about us</a></p>
+    </div>
+
+    <div class="section">
+      <h2>about</h2>
+      <p>the sticky note app is a desktop Java application designed for students</p>
+      <p>who want a fast, distraction-free way to take notes. no accounts, no cloud,</p>
+      <p>no complexity. just open it and start writing.</p>
+      <p style="margin-top: 8px;">our product stays within its scope. it is simply a sticky note app.</p>
+    </div>
+
+    <div class="download-section">
+      <h2>download</h2>
+      <a href="#" class="download-btn" onclick="alert('Coming soon! The app is currently in development.'); return false;">download sticky note app (.jar)</a>
+      <p class="download-note">requires Java 17 or later to run.</p>
+      <p class="download-note">currently in development. check back for the first release.</p>
     </div>
 
   </div>

@@ -1,3 +1,223 @@
+<<<<<<< HEAD
+<html>
+<head>
+  <title>MacroProgrammers - Sticky Note App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: radial-gradient(circle at center, #FAF8EF 0%, #F0EEE0 100%);
+      color: #2d2d2d;
+      min-height: 100vh;
+      font-size: 16px;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: #2d2d2d; text-decoration: underline; }
+    a:hover { color: #000; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 18px 5%;
+      z-index: 100;
+    }
+
+    .nav__links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .nav__links li a {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      font-weight: bold;
+      color: #2d2d2d;
+      text-decoration: none;
+    }
+
+    .nav__links li a:hover { text-decoration: underline; }
+
+    .nav__links li::after {
+      content: '|';
+      color: #999;
+      margin: 0 12px;
+      font-size: 20px;
+    }
+
+    .nav__links li:last-child::after { content: ''; margin: 0; }
+
+    .container {
+      max-width: 750px;
+      padding: 0 24px;
+      margin-left: 3%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      line-height: 1.15;
+    }
+
+    .hero p { font-size: 17px; margin-bottom: 2px; }
+
+    .section h2 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .section p { font-size: 17px; margin-bottom: 2px; }
+
+    .section ul { padding-left: 24px; }
+    .section li { font-size: 17px; margin-bottom: 4px; }
+    .section li strong { font-weight: bold; }
+
+    .download-section {
+      border-top: 1px solid #ccc;
+      padding-top: 24px;
+    }
+
+    .download-section h2 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2d2d2d;
+      background: none;
+      border: 2px solid #2d2d2d;
+      padding: 12px 28px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .download-btn:hover {
+      background: #2d2d2d;
+      color: #FAF8EF;
+    }
+
+    .download-note {
+      color: #777;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    footer a { color: #2d2d2d; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      .container { margin-left: 0; padding: 20px; }
+      .nav__links li a { font-size: 16px; }
+      .nav__links li::after { margin: 0 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="app.html">App</a></li>
+      <li><a href="secondpage.html">Team</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="https://github.com/MacroProgrammers/groupTwoRepo" target="_blank" rel="noopener">Github</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="hero">
+      <h1>Quick Notes App.</h1>
+      <p>A simple Sticky Note App built for students.</p>
+      <p>Write and organize notes without extra clutter.</p>
+      <p>Built in Java.</p>
+    </div>
+
+    <div class="section">
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Quick notes</strong> - Open the app and start writing</li>
+        <li><strong>Easy organization</strong> - Keep your notes sorted and grouped</li>
+        <li><strong>Customizable</strong> - Change fonts, colors, and layout</li>
+        <li><strong>Search</strong> - Find notes faster</li>
+        <li><strong>Lightweight</strong> - Runs locally on your machine</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>about</h2>
+      <p>The quick notes app is a desktop Java application for students who want</p>
+      <p>A simple way to write and organize notes. no accounts, no cloud,</p>
+      <p>and no extra setup. just open it and start writing.</p>
+      <p style="margin-top: 8px;">It is a simple sticky note app built for our class project.</p>
+    </div>
+
+    <div class="Download-section">
+      <h2>download</h2>
+
+      <a href="./SampleApp-Windows.msi" class="download-btn" download>
+        Download StickyNoteApp for Windows (.msi)
+      </a>
+      <p class="download-note">Windows installer.</p>
+      <p class="download-note">Security message may pop up. Click on "run anyway".</p>
+
+      <br><br>
+
+      <a href="./StickyNote-Installer.dmg" class="download-btn" download>
+        Download StickyNoteApp for macOS (.dmg)
+      </a>
+      <p class="download-note">macOS only.</p>
+
+      <p class="download-note">Requires Java 17 or later to run.</p>
+      <p class = "download-note">Security message may pop up. If so, you need to go to security in setting to grant access to the app.</p> 
+      
+      <br><br>
+
+      <a href="./sampleapp_1.0.0_amd64.deb" class="download-btn" download>
+        Download StickyNoteApp for Linux (.deb)
+      </a>
+      <p class="download-note">Linux installer.</p>
+      <p class="Security message may pop up. Click on "accept from distributor".</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="https://github.com/MacroProgrammers/groupTwoRepo" target="_blank" rel="noopener">github</a>
+  </footer>
+
+</body>
+</html>
+=======
 <html>
 <head>
   <title>MacroProgrammers - Sticky Note App</title>
@@ -216,3 +436,4 @@
 
 </body>
 </html>
+>>>>>>> upstream/main
